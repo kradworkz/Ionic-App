@@ -7,17 +7,11 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-item *ngFor="let item of recipes">
-    <ion-card color="light" routerLink="/recipe/{{item.id}}" >
-      <img alt="{{item.name}}" src="assets/img/{{item.img}}" />
-      <ion-card-header>
-        <ion-card-title>{{item.name}}</ion-card-title>
-        <ion-card-subtitle>{{item.type}}</ion-card-subtitle>
-      </ion-card-header>
-    
-      <ion-card-content>
-        {{item.info}}
-      </ion-card-content>
-    </ion-card>
-  </ion-item>
+  <div *ngFor="let item of recipes" style="background-color: white; cursor: pointer;" routerLink="/recipe/{{item.id}}">
+    <ion-card-content style="color: black; font-weight: 700;">{{item.name }}</ion-card-content>
+    <ion-img src="assets/img/{{item.img}}" alt="{{item.name}}"></ion-img>
+    <ion-card-content style="margin-bottom: 10px; color: black;">
+      {{ item.info }}
+    </ion-card-content>
+   </div> 
 </ion-content>

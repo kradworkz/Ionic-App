@@ -1,9 +1,24 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/home"></ion-back-button>
+    </ion-buttons>
     <ion-title>Recipe</ion-title>
   </ion-toolbar>
 </ion-header>
+<div *ngIf="item != null">
+  <ion-card>
+    <img alt="{{item.name}}" src="assets/img/{{item.img}}" />
+    <ion-card-header>
+      <ion-card-title>{{ item.name }}</ion-card-title>
+    </ion-card-header>
 
+    <ion-card-content>
+      {{ item.info }}
+    </ion-card-content>
+  </ion-card>
+</div>
+<!-- 
 <ion-content>
  <div *ngIf="item != null">
   <ion-img src="assets/img/{{item.img}}" alt="{{item.name}}"></ion-img>
@@ -17,4 +32,4 @@
     </ion-card-content>
   </ion-card>
  </div> 
-</ion-content>
+</ion-content> -->

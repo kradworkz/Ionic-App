@@ -12,5 +12,13 @@
         "name" : "Cookie Icing",
         "type" : "Filipino Desert",
         "info" : "Everyone’s suddenly an artist during the holiday season and the allure of decorating sugar cookies (or trying to, at least) never fades. Seasoned pros and stick-figure drawers alike will appreciate the ease and usability of this simple sugar cookie icing recipe."
+    },
+    {
+        "id" : 2,
+        "img" : "rice.jpg",
+        "name" : "Crispy Rice",
+        "type" : "Filipino Dish",
+        "info" : "Leftover rice is ideal for this dish (and a great way to use up any takeout that’s hanging around), since fully chilled rice tends to be drier and will become crispier and browner in the skillet. To get the best texture, evenly distribute the rice in your pan and gently press down to flatten it out like a pancake. "
+
     }
 ]
