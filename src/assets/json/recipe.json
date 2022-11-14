@@ -1,0 +1,16 @@
+[
+    {
+        "id" : 0,
+        "img" : "chicken-adobo.jpg",
+        "name" : "Chicken Adobo",
+        "type" : "Filipino Dish",
+        "info" : "Sweet, salty, tangy, garlicky—what's not to like? While many recipes for adobo call for painstakingly peeling and slicing more than a dozen garlic cloves, we found that cutting open a whole head of garlic and simmering it in the sauce achieves the same delicious effect in a fraction of the time."
+    },
+    {
+        "id" : 1,
+        "img" : "cookie.jpg",
+        "name" : "Cookie Icing",
+        "type" : "Filipino Desert",
+        "info" : "Everyone’s suddenly an artist during the holiday season and the allure of decorating sugar cookies (or trying to, at least) never fades. Seasoned pros and stick-figure drawers alike will appreciate the ease and usability of this simple sugar cookie icing recipe."
+    }
+]

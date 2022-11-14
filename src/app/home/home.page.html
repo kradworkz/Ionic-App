@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="primary">
+      Bon Appetite
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngFor="let item of recipes">
+    <ion-card color="light" routerLink="/recipe/{{item.id}}" >
+      <img alt="{{item.name}}" src="assets/img/{{item.img}}" />
+      <ion-card-header>
+        <ion-card-title>{{item.name}}</ion-card-title>
+        <ion-card-subtitle>{{item.type}}</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        {{item.info}}
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+</ion-content>
