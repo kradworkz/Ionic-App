@@ -6,15 +6,17 @@
     <ion-title>Recipe</ion-title>
   </ion-toolbar>
 </ion-header>
-<div *ngIf="item != null">
-  <ion-card>
-    <img alt="{{item.name}}" src="assets/img/{{item.img}}" />
-    <ion-card-header>
-      <ion-card-title>{{ item.name }}</ion-card-title>
-    </ion-card-header>
+<ion-content [fullscreen]="true">
+  <div *ngIf="item != null">
+    <ion-card color="light">
+      <img alt="{{item.name}}" src="assets/img/{{item.img}}" />
+      <ion-card-header>
+        <ion-card-title>{{ item.name }}</ion-card-title>
+      </ion-card-header>
 
-    <ion-card-content>
-      {{ item.info }}
-    </ion-card-content>
-  </ion-card>
-</div>
+      <ion-card-content>
+        {{ item.info }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
