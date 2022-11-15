@@ -32,7 +32,7 @@ export class RecipePage implements OnInit {
   async showLoading() {
     const loading = await this.loadingCtrl.create({
       message: 'Loading...',
-      duration: 1000,
+      duration: 100,
       spinner: 'circles',
     });
 
